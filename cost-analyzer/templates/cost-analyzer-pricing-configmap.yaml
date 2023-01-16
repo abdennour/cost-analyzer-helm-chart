@@ -46,6 +46,9 @@ data:
   {{- if .Values.kubecostProductConfigs.clusterName }}
     clusterName: "{{ .Values.kubecostProductConfigs.clusterName }}"
   {{- end -}}
+  {{- if .Values.kubecostProductConfigs.clusterAccount }}
+    clusterAccount: "{{ .Values.kubecostProductConfigs.clusterAccount }}"
+  {{- end -}}
   {{- if .Values.kubecostProductConfigs.currencyCode }}
     currencyCode: "{{ .Values.kubecostProductConfigs.currencyCode }}"
   {{- end -}}
